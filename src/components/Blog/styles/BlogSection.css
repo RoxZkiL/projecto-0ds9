@@ -1,0 +1,113 @@
+.blog-section-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem;
+    background-color: #d3f1e6bd;
+    height: auto; 
+  }
+  
+  .tip-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(240, 255, 251, 0.834);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .tip-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .tip-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px inset #34d399bd;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .tip-card:hover .tip-image {
+    transform: scale(1.04); 
+  }
+  
+  .tip-title {
+    font-size: 1.4rem;
+    color: #34d399bd;
+    font-weight: bold;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .page-link {
+    color: #34d399bd;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #34d399bd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .page-link:hover {
+    background-color: #34d399bd;
+    color: #fff;
+  }
+  
+  .page-link.active {
+    background-color: #34d399bd;
+    color: #fff;
+  }
+  
+  /* Media Queries para Responsividad */
+  
+  @media (max-width: 1200px) {
+    .blog-section-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .tip-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .tip-title {
+      font-size: 1.25rem;
+       margin-top: 3rem;
+       padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .blog-section-container {
+      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+      padding: 3rem;
+    }
+  
+    .tip-image {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .tip-title {
+      padding: 3rem;
+      font-size: 1rem;
+      margin-top: 3rem;
+    }
+  }
+  

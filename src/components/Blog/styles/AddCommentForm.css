@@ -1,0 +1,101 @@
+.comment-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: auto; 
+  padding: 0 1rem; 
+  box-sizing: border-box;
+}
+
+.comment-form-wrapper {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.471);
+  width: 50%; 
+  max-width: 600px; 
+  padding: 1.5rem;
+  background-color: rgb(237, 234, 234);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.comment-textarea {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  height: 6rem;
+}
+
+.comment-textarea:focus {
+  outline: none;
+  border-color: #34d399bd;
+  box-shadow: 0 0 6px #2ed195;
+}
+
+.comment-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.comment-button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2ed195;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  background-color: #34d399bd; 
+}
+
+.comment-button.clear {
+  background-color: #808080;
+}
+
+.comment-button.clear:hover {
+  background-color: #666666be;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .comment-form-wrapper {
+    width: 90%; 
+    max-width: 100%; 
+    padding: 1rem;
+  }
+
+  .comment-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comment-form-wrapper {
+    width: 100%; 
+    padding: 1rem;
+  }
+
+  .comment-textarea {
+    height: 5rem;
+  }
+
+  .comment-button {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}

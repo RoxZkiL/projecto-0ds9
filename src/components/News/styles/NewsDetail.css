@@ -1,0 +1,104 @@
+.news-detail {
+  margin-top: 300px;  
+  max-width: 1024px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de detalle de la noticia */
+.news-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Título de detalle de la noticia */
+.news-detail-title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #1aa773c2;
+}
+
+/* Mini subtítulo de detalle de la noticia */
+.news-detail-mini-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Fecha y tema de detalle de la noticia */
+.news-detail-date,
+.news-detail-topic {
+  font-weight: 300;
+}
+
+/* Autor de detalle de la noticia */
+.news-detail-author {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #777;
+}
+
+/* Subtítulo de detalle de la noticia */
+.news-detail-subtitle {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #444;
+}
+
+/* Información de detalle de la noticia */
+.news-detail-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* Ajustes responsivos */
+
+/* Pantallas más pequeñas */
+@media (max-width: 768px) {
+  .news-detail {
+    margin-top: 100px; /* Ajusta el margen superior en pantallas más pequeñas */
+    padding: 15px; /* Reduce el padding para pantallas más pequeñas */
+  }
+
+  .news-detail-title {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente del título */
+  }
+
+  .news-detail-mini-subtitle,
+  .news-detail-author {
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .news-detail-subtitle {
+    font-size: 1rem; /* Ajusta el tamaño del subtítulo */
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .news-detail {
+    margin-top: 50px; /* Ajusta aún más el margen superior */
+    padding: 10px; /* Reduce el padding para dispositivos muy pequeños */
+  }
+
+  .news-detail-title {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+  }
+
+  .news-detail-mini-subtitle,
+  .news-detail-author {
+    font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  .news-detail-subtitle {
+    font-size: 0.9rem; /* Ajusta el tamaño del subtítulo */
+  }
+}

@@ -1,0 +1,137 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px groove #00000029;
+    border-bottom: 4px groove rgba(0, 0, 0, 0.159);
+    background-color: rgba(255, 255, 255, 0.608);
+    padding: 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.img-div img {
+    max-width: 100%;
+    border-radius: 1rem; 
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.472);
+    transition: background-color 0.3s ease;
+}
+
+.text-div {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1.2rem; 
+    font-family: Calibri;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.heading-div h2 {
+color: rgb(71, 177, 127);
+}
+
+.heading-div legend {
+    font-weight: 800;
+    color: rgba(59, 59, 59, 0.836);
+}
+.main-text p {
+    color: rgba(59, 59, 59, 0.952)
+}
+
+
+@media (min-width: 768px) {
+    .faq {
+        flex-direction: row;
+        align-items: center; 
+        padding: 2rem;
+    }
+
+    .img-div {
+        width: 40%; 
+    }
+
+    .text-div {
+        width: 60%; 
+        padding: 1rem;
+        font-size: 1.1rem; 
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-div {
+        width: 50%; 
+    }
+
+    .text-div {
+        width: 50%;
+        padding: 1rem;
+        font-size: 1.4rem; 
+        text-align: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .faq {
+        padding: 2rem;
+    }
+
+    .img-div {
+        width: 45%; 
+    }
+
+    .text-div {
+        width: 55%;
+        padding: 1rem;
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .faq {
+        padding: 2rem;
+    }
+
+    .img-div {
+        width: 45%; 
+    }
+
+    .text-div {
+        width: 55%;
+        padding: 2rem;
+        font-size: 1.4rem; 
+        text-align: center;
+    }
+}
+
+@media (min-width: 1920px) {
+    .faq {
+        padding: 4rem;
+    }
+
+    .img-div {
+        width: 40%; 
+    }
+
+    .text-div {
+        width: 60%;
+        padding: 2rem;
+        font-size: 1.6rem; 
+        text-align: center;
+    }
+}

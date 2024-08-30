@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .page-link {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #34d399bd;
+    padding: 0.6rem 1.2rem;
+    margin: 0 5px;
+    border: 1px solid #34d399bd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .page-link:hover {
+    background-color: #34d399bd;
+    color: #fff;
+  }
+  
+  .page-link.active {
+    background-color: #34d399bd;
+    color: #fff;
+  }
+  
+  @media (max-width: 480px) {
+    .page-link {
+      padding: 12px 14px;
+      font-size: 0.6rem;
+    }
+}

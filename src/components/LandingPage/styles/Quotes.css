@@ -1,0 +1,97 @@
+.quotes-container {
+    padding: 4rem;
+    min-height: 100vh;
+    text-align: left;
+  }
+  
+  .quotes-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(71, 177, 127);
+  }
+  
+  .quotes-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(128, 128, 128, 0.925);
+  }
+  
+  .quotes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 4rem;
+  }
+  
+  .quote-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  .quote-card p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: rgba(105, 105, 105, 0.856);
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    color: rgb(65, 65, 65)
+  }
+  
+  .author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  .author-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .author-text span:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .author-text span:last-child {
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+    color: gray;
+  }
+  
+  @media (max-width: 768px) {
+    .quote-card {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .quote-card {
+      width: 45%;
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .quote-card {
+      width: 30%;
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,158 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.carousel-content {
+  display: flex;
+  gap: 1rem; /* Espacio entre las tarjetas */
+  padding: 1rem 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 60%; /* Limita el ancho máximo en pantallas grandes */
+  justify-content: center; /* Alinea las tarjetas al centro */
+}
+
+.carousel-card {
+  background-color: #fcfcfc;
+  border-radius: 0.6rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.471);
+  border: 1px solid #92d3b2;
+  padding: 1rem;
+  width: 20rem;
+  text-align: center;
+  margin: 1rem 0; /* Espacio vertical alrededor de las tarjetas */
+  flex-shrink: 0; /* Evita que las tarjetas se reduzcan demasiado */
+}
+
+.carousel-title-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  font-size: 4rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(0, 0, 0, 0.564);
+}
+
+.carousel-card h4 {
+  color: #000; /* Asegúrate de que el texto del nombre sea visible */
+  margin: 0.5rem 0;
+}
+
+.carousel-comment p {
+  color: #333; /* Asegúrate de que el texto del comentario sea visible */
+}
+
+/* Media queries para pantallas de 14 pulgadas */
+@media (max-width: 1461px) and (max-height: 810px) {
+  .carousel-content {
+    gap: 0.8rem; /* Reduce ligeramente el espacio entre tarjetas */
+    justify-content: center;
+    max-width: 70%; /* Ajusta el ancho máximo del carrusel */
+  }
+
+  .carousel-card {
+    width: 18rem; /* Ajusta el ancho de las tarjetas para pantallas de 14 pulgadas */
+  }
+}
+
+@media (max-width: 1417px) and (max-height: 810px) {
+  .carousel-content {
+    gap: 0.8rem; /* Reduce ligeramente el espacio entre tarjetas */
+    justify-content: center;
+    max-width: 70%; /* Ajusta el ancho máximo del carrusel */
+  }
+
+  .carousel-card {
+    width: 17rem; /* Ajusta el ancho de las tarjetas para pantallas de 14 pulgadas */
+  }
+}
+
+@media (max-width: 1375px) and (max-height: 810px) {
+  .carousel-content {
+    gap: 0.8rem; /* Reduce ligeramente el espacio entre tarjetas */
+    justify-content: center;
+    max-width: 70%; /* Ajusta el ancho máximo del carrusel */
+  }
+
+  .carousel-card {
+    width: 16rem; /* Ajusta el ancho de las tarjetas para pantallas de 14 pulgadas */
+  }
+}
+
+@media (max-width: 1300px) and (max-height: 810px) {
+  .carousel-content {
+    gap: 0.8rem; /* Reduce ligeramente el espacio entre tarjetas */
+    justify-content: center;
+    max-width: 70%; /* Ajusta el ancho máximo del carrusel */
+  }
+
+  .carousel-card {
+    width: 15rem; /* Ajusta el ancho de las tarjetas para pantallas de 14 pulgadas */
+  }
+}
+
+/* Media queries para pantallas de 14 pulgadas */
+@media (max-width: 1185px) and (max-height: 810px) {
+  .carousel-content {
+    gap: 0.8rem; /* Reduce ligeramente el espacio entre tarjetas */
+    justify-content: center;
+    max-width: 70%; /* Ajusta el ancho máximo del carrusel */
+  }
+
+  .carousel-card {
+    width: 14rem; /* Ajusta el ancho de las tarjetas para pantallas de 14 pulgadas */
+  }
+
+  .carousel-button {
+    font-size: 3rem; /* Reduce un poco el tamaño de los botones */
+  }
+}
+
+/* Media queries para pantallas de 14 pulgadas */
+@media (max-width: 1080px) and (max-height: 810px) {
+  .carousel-content {
+    gap: 0.8rem; /* Reduce ligeramente el espacio entre tarjetas */
+    justify-content: center;
+    max-width: 70%; /* Ajusta el ancho máximo del carrusel */
+  }
+
+  .carousel-card {
+    width: 13rem; /* Ajusta el ancho de las tarjetas para pantallas de 14 pulgadas */
+  }
+}
+
+/* Media queries para pantallas más pequeñas, como móviles */
+@media (max-width: 480px) {
+  .carousel-content {
+    gap: 1rem; /* Mantén el espacio entre tarjetas aunque no se vean */
+    justify-content: center; /* Alinea las tarjetas al inicio */
+  }
+
+  .carousel-card {
+    width: calc(96% - 2rem); /* Ocupa casi todo el ancho disponible */
+    margin: 0; /* Remueve márgenes */
+  }
+
+  .carousel-button {
+    font-size: 2.5rem; /* Reduce el tamaño de los botones */
+  }
+}

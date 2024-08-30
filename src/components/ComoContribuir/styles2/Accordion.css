@@ -1,0 +1,457 @@
+.accordion-header {
+    background-color: #5c5c5c;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative; /* Permite el posicionamiento absoluto del contenido dentro */
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    font-family: Arial, 'Arial Narrow', Arial, sans-serif;
+}
+
+.sub-accordion {
+  color: #e4e4e4;
+}
+
+.accordion-title {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2rem; /* Tamaño del título */
+    font-weight: bold; /* Grosor del título */
+    margin: 20px 0; /* Espacio alrededor del título */
+    color: rgb(94, 94, 94); /* Color del texto */
+    padding-bottom: 20px;
+}
+
+.header-image-wrapper {
+    position: relative; /* Contenedor para la imagen y el texto */
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+    width: 100%;
+}
+
+.header-image {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto;
+    filter: hue-rotate(15deg) brightness(80%) opacity(60%)
+}
+
+.header-text {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto */
+    color: #fff; /* Color del texto */
+    font-size: 4rem; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+}
+
+@media (max-width: 700px) {
+    .header-text {
+        font-size: 3rem;
+    }
+}
+
+.accordion-header h1 {
+    margin: 0;
+    color: transparent; /* Oculta el texto del encabezado si se superpone con el texto de la imagen */
+    
+}
+
+.accordion-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: rgb(228, 252, 242);
+}
+
+.content-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.accordion-image {
+    width: 300px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.5);
+    margin-left: 40px;
+}
+
+.accordion-text {
+    flex: 1;
+    display: flex; /* Mantén el flex para el contenedor */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    text-align: left;
+    color: #434343;
+    white-space: normal;
+    text-overflow: clip;
+    overflow: visible;
+    margin-right: 40px;
+}
+
+.accordion-text h4 {
+    align-self: flex-start;
+    color: #228862bd;
+    margin: 0; /* Elimina el margen si es necesario */
+    padding-bottom: 20px; /* Elimina el padding si es necesario */
+}
+
+
+@media (max-width: 700px) {
+    .accordion-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    
+    }
+
+    .accordion-text {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        
+        }
+    .accordion-text h6 {
+        grid-row: 1;
+    }
+    .accordion-image {
+        grid-row: 2;
+        max-width: 100%;
+    }
+    
+    .accordion-text h4 {
+       grid-row: 3;
+    }
+    
+
+
+}
+.custom-accordion {
+    margin: auto;
+    width: 100%;
+    border: 1px solid rgba(71, 177, 128, 0.388);
+    border-radius: 5px;
+   
+}
+
+.custom-accordion .accordion-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: rgb(255, 255, 255);
+    color:rgb(15, 58, 37);
+}
+
+.custom-accordion .accordion-body {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px; /* Ajusta el padding interno del cuerpo del acordeón */
+   max-width: 100%;
+    overflow: visible;
+
+}
+
+/* Estilo para el título dentro del acordeón */
+.accordion-title2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1.5rem; /* Tamaño del título */
+    font-weight: bold; /* Grosor del título */
+    margin: 20px 0; /* Espacio alrededor del título */
+    color: rgb(33, 33, 33);; /* Color del texto */
+}
+
+/* Estructura de la fila grande para la sección de Empresas */
+.content-row-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea el texto a la izquierda y la imagen a la derecha */
+    margin-bottom: 30px; /* Espacio inferior para separación */
+}
+
+/* Estilo para el texto dentro de la fila grande */
+.accordion-text-large {
+    flex: 1;
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding-right: 20px; /* Espacio entre el texto y la imagen */
+    color:  #434343;
+}
+
+/* Estilo para la imagen dentro de la fila grande */
+.accordion-image-large {
+    width: 400px; /* Tamaño de la imagen, ajusta según sea necesario */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.5);
+
+}
+
+@media (max-width: 700px) {
+    .accordion-image-large {
+        order:2;
+        margin: 20px 0;
+        width: 300px;
+
+    }
+
+    .accordion-title2 {
+        order:1;
+        font-weight: bold;
+
+    }
+
+    .accordion-text-large {
+        order:3;
+        text-align: justify;
+    }
+
+    .content-row-large {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+  }
+  
+  .image-item {
+    display: flex;
+    flex-direction: column; /* Coloca el texto debajo de la imagen */
+    align-items: center; /* Centra el contenido */
+  }
+  
+  .accordion-image-grid {
+    width: 150px; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 150px; /* Altura fija para que todas las imágenes sean iguales */
+    border-radius: 100px;
+    border: 2px solid rgb(220, 221, 220);
+  }
+  
+  .image-caption {
+    margin-top: 8px; /* Espacio entre la imagen y el texto */
+    font-size: 0.9rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto debajo de la imagen */
+  }
+  
+  @media (max-width: 700px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+
+
+  }
+  .content-wrapper2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px ;
+    flex-wrap: wrap;
+  }
+
+  .accordion-club {
+    display: flex;
+    flex-direction: row; /* Imagen a la izquierda y texto a la derecha */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.club-image {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.5);
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 70px;
+}
+
+.club-text {
+    flex: 1;
+}
+
+.club-text h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .accordion-club {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .accordion-title3 {
+      order: 1; /* Coloca el h4 en la primera posición */
+      margin-bottom: 10px; /* Espaciado entre el título y la imagen */
+      text-align: justify; 
+      font-weight: bold;
+      font-size: medium;
+    }
+  
+    .club-image {
+      order: 2; /* Coloca la imagen en la segunda posición */
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+    }
+  
+    .club-text h6 {
+      order: 3; /* Coloca el h6 en la tercera posición */
+      text-align: justify; /* Asegura que el texto esté bien alineado */
+    }
+  }
+  
+
+
+
+  .accordion-text {
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+   
+    display: flex;
+    flex-direction: column; /* Mantiene los elementos en una columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+  }
+  
+  h6 {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    margin: 0 0 10px 0; /* Ajusta el margen si es necesario */
+  }
+  
+
+  .accordion-text2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  
+  .accordion-title3 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1.5rem; /* Tamaño del título */
+    font-weight: bold; /* Grosor del título */
+    margin: 20px 0; /* Espacio alrededor del título */
+    color: rgb(33, 33, 33);; /* Color del texto */
+}
+
+.content-wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.content-row3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.accordion-image3 {
+    width: 150px;
+    height: auto;
+    margin-right: 16px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.5);
+}
+
+.accordion-text3 h6 {
+    flex: 1;
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    .accordion-text3 h6 {
+      font-size: 15px;
+      text-align: left;
+    }
+    .accordion-text3 h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+  }
+
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-body img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+
+  
+  .custom-btn {
+    background-color:rgb(103, 201, 155); /* Color de fondo personalizado */
+    color: white; /* Color del texto */
+    border-color:rgb(103, 201, 155);
+    box-shadow: #434343; /* Color del borde */
+  }
+  
+  /* Cambia el color del botón cuando el mouse está encima */
+  .custom-btn:hover {
+    background-color: rgb(71, 177, 127);
+    color:white; /* Color de fondo al hacer hover */
+    border-color: rgb(71, 177, 127); /* Color del borde al hacer hover */
+  }
+  
+  /* Asegúrate de que el modal ocupe toda la pantalla */
+.custom-modal-style-one .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .custom-modal-style-one .modal-content {
+    height: 100%;
+    border: none;
+  }
+  
+  .custom-modal-style-one .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+  }
+  
+  .custom-modal-style-one .modal-body img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta la imagen para que se ajuste al contenedor sin distorsión */
+  }

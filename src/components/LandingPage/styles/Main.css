@@ -1,0 +1,104 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Calibri, sans-serif;
+  background-color: #fafafa;
+  box-shadow: black;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.484);
+  z-index: 1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.802);
+  margin: 0;
+}
+
+.intro button {
+  margin-top: 2rem;
+  padding: 0.6rem 3.5rem;
+  background-color: #1aa773c2;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.504);
+  color: white;
+  font-weight: 600;
+}
+
+.intro button:hover {
+  background-color: #10b981;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 4rem;
+  }
+  
+  .intro p {
+    font-size: 2rem;
+  }
+  
+  .intro button {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro h1 {
+    font-size: 6rem;
+  }
+  
+  .intro p {
+    font-size: 3rem;
+  }
+  
+  .intro button {
+    font-size: 2rem;
+  }
+}

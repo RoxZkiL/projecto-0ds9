@@ -1,0 +1,161 @@
+.tipDetail-main-container {
+    margin-top: 4rem;
+    padding: 2rem 0rem;
+    justify-content: space-between;
+}
+
+.img-title-info-wrapper {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column; 
+}
+
+.img-title-info-wrapper img {
+    border-radius: 1rem;
+    width: 100%; 
+    height: auto; 
+    max-width: 28rem; 
+}
+
+.tipDetail-text {
+    padding: 2rem;
+}
+
+.tipDetail-text h2 {
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.tipDetail-text p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem; 
+    color: rgba(71, 71, 71, 0.908);
+}
+
+.comments-title {
+    text-align: center;
+    font-size: 1.5rem;
+    border-top: 4px groove rgba(0, 0, 0, 0.096);
+    padding-top: 1rem;
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 1024px) {
+    .img-title-info-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-title-info-wrapper img {
+        width: 50%; 
+        height: auto;
+        max-width: 50%;
+    }
+
+    .tipDetail-text {
+        width: 50%; 
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .tipDetail-text h2 {
+        font-size: 2rem;
+    }
+
+    .tipDetail-text p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .comments-title {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .tipDetail-main-container {
+        padding: 3rem 0rem;
+    }
+
+    .img-title-info-wrapper img {
+        max-width: 45%;
+    }
+
+    .tipDetail-text {
+        padding: 0 3rem;
+    }
+
+    .tipDetail-text h2 {
+        font-size: 2rem;
+    }
+
+    .tipDetail-text p {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+
+    .comments-title {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .img-title-info-wrapper img {
+        max-width: 40%;
+    }
+
+    .tipDetail-text {
+        padding: 0 4rem;
+    }
+
+    .tipDetail-text h2 {
+        font-size: 3rem;
+    }
+
+    .tipDetail-text p {
+        font-size: 1.4rem;
+    }
+
+    .comments-title {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos específicos para pantallas más grandes */
+@media (min-width: 768px) {
+    .img-title-info-wrapper {
+        flex-direction: row; 
+        justify-content: space-between;
+        text-align: left; 
+    }
+
+    .img-title-info-wrapper img {
+        width: 50%; 
+        height: 30rem;
+        max-width: none; 
+    }
+
+    .tipDetail-text {
+        width: 50%; 
+        padding: 0 4rem; 
+    }
+
+    .tipDetail-text h2 {
+        padding: 0 4rem; 
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .tipDetail-text p {
+        margin-top: 4rem;
+        font-size: 1.4rem;
+        padding: 0 4rem;
+    }
+
+    .comments-title {
+        
+        margin-top: 8rem;
+    }
+}

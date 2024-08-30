@@ -1,0 +1,41 @@
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.load-more-button {
+  margin-top: 1rem;
+  padding: 0.3rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.482);
+  color: white;
+  background-color: #2ed195;
+  width: 20%;
+  font-weight: bold;
+}
+
+/* Efecto hover para el botón */
+.load-more-button:hover {
+  background-color: #34d399bd;
+}
+
+/* Ajuste responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .load-more-button {
+    width: 40%; /* Ajusta el ancho del botón para tablets */
+    font-size: 1rem; /* Disminuye un poco el tamaño de la fuente */
+  }
+}
+
+/* Ajuste responsivo para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .load-more-button {
+    width: 60%; /* Ajusta el ancho del botón para móviles */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente para móviles */
+  }
+}

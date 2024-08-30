@@ -1,0 +1,155 @@
+.relevancia-global-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 7rem;
+    background-color: azure;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+
+  .relevancia-global-container.reverse {
+    flex-direction: row-reverse;
+    background-color: rgb(202, 250, 222);
+  }
+  
+  .text-section {
+    flex: 1;
+    border: 3px solid rgba(79, 150, 117, 0.902);
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    max-width: 100%;
+  }
+
+  .text-section.reverse {
+    border: 3px solid rgba(0, 0, 0, 0.633);
+  }
+  
+  .image-section {
+    flex: 1;
+    text-align: right;
+    max-width: 100%;
+  }
+
+  .image-section.reverse {
+    text-align: left;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 0;
+    color: rgba(52, 114, 78, 0.677);
+  }
+
+  .main-title.reverse {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .info-text {
+    color: rgba(40, 40, 40, 0.724);
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+
+  .info-text.reverse { 
+    color: rgba(30, 30, 30, 0.8);
+    font-size: 1.6rem;
+  }
+
+  /* Media queries */
+@media (max-width: 575px) {
+  .relevancia-global-container {
+    padding: 2rem 1rem;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .relevancia-global-container.reverse {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .text-section {
+    padding: 1rem;
+  }
+  
+  .main-title {
+    font-size: 1.8rem; 
+  }
+  
+  .info-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media queries */
+@media (min-width: 576px) and (max-width: 767px) {
+  .relevancia-global-container {
+    padding: 2rem 1rem;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .relevancia-global-container.reverse {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .main-title {
+    font-size: 2.2rem;
+  }
+  
+  .info-text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .relevancia-global-container {
+    padding: 3rem 4rem;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .relevancia-global-container.reverse {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .main-title {
+    font-size: 2.6rem;
+  }
+  
+  .info-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .relevancia-global-container {
+    padding: 4rem 7rem;
+    flex-direction: row;
+  }
+  
+  .relevancia-global-container.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .main-title {
+    font-size: 3.2rem;
+  }
+  
+  .info-text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
